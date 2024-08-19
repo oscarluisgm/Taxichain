@@ -41,7 +41,7 @@ export default function Marketplace() {
                   <img src={nft.img} className="img-nft w-100 " />
                   <div className="description mt-2 px-2">
                     <h6 className="text-light">
-                      This NFT provides an estimated ROI of {nft.roi} months
+                      This NFT provides an estimated ROI of {nft.roi} months.
                     </h6>
                   </div>
                   <div className="nft-texts">
