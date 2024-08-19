@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import nfts from "../services/nfts";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function Marketplace() {
   
   
@@ -29,8 +32,14 @@ export default function Marketplace() {
     setCurrentCar(nft);
   }
 
+  const buy=()=>{
+    handleModal(false, {})
+    toast("Wow so easy!");
+  }
+
   return (
     <>
+      <ToastContainer/>
       {visible && <div className="bg-modal">
         <div className="body-modal card gap-4">
           <div className="text-end">
@@ -38,7 +47,7 @@ export default function Marketplace() {
           </div>
           <img src={currentCar.img} className="w-100" />
           This NFT provides an estimated ROI of {currentCar.roi} months.
-          <button className="card-button buy-button">Buy</button>
+          <button className="card-button buy-button" onClick={buy}>Buy</button>
         </div>
       </div>}
 
