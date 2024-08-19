@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Matemasie&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar{
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgb(32, 32, 32), rgb(255, 166, 0));
+  height: 100vh;
+  padding: 10px;
+}
+
+.sidebar-link{
+  text-decoration: none;
+  margin: 5px;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.356);
+  color: white;
+  border-radius: 4px; 
+  height: 35px;
+  overflow: auto;
+}
+
+.sidebar-link:hover{
+  border: 3px solid white;
+  color: white;
+}
+
+.btn-filter{
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.btn-filter:hover{
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.img-nft{
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.layout-taxichain{
+  display: flex;
+  background-color: rgb(228, 186, 0);
+}
+
+.filter-buttons{
+  display: flex;
+  background-color: rgb(32, 32, 32);
+  justify-content: end;
+  align-items: center;
+  height: 50px;
+}
+
+.route-class{
+  width: 100%;
+  background-color: rgb(255, 166, 0);
+}
+
+.logo{
+  width: 80%;
+  padding-top: 15px;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.frames{
+  padding: 9px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 15px;
+  transition: 0.3s;
+  overflow: auto;
+}
+
+.frames:hover{
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.frames:active{
+  transform: scale(0.99);
+  cursor: auto;
+}
+
+.nft-texts{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.rarity-text, .price-text{
+  line-height: 12px;
+}
+
+.bg-container{
+  min-height: 100vh;
+  background: linear-gradient(rgba(255, 153, 0, 0.644),rgba(14, 14, 15, 0.74)), url(../images/city.png);
+  background-size: cover;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between;  
+  background-color: rgb(32, 32, 32);
+  padding: 10px;
+}
+
+.wallet-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 10px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgb(255, 166, 0);
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.wallet-icon{
+  font-size: 20px;
+}
+
+@media (max-width:576px){
+    .layout-taxichain, .nav-bar{
+      font-size: smaller;
+    }    
+}
+
+@media (max-width:768px){
+  .layout-taxichain, .nav-bar{
+    font-size: 15px;
+  } 
+}
+
+@media (min-width:992px){
+  .layout-taxichain, .nav-bar{
+    font-size: 17px;
+  } 
+}
