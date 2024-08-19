@@ -3,10 +3,14 @@ import Router from "./router";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import pictures from "../images/importer";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+import useTostify from "./hooks/useTostify";
 
 function App() {
+      const{ToastContainer} = useTostify()
+  
   return (
     <>
+      <ToastContainer/>
       <div className="nav-bar">
         <img src={pictures.logo} height="80px" />
         <button className="wallet-button"> <i className="bi bi-wallet wallet-icon"></i> Connect Wallet</button>
