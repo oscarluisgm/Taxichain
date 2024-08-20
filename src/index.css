@@ -161,7 +161,7 @@ body{
   justify-content: center;
   align-items: center;
   column-gap: 15px;
-  margin-left: 35px;
+  margin-left: 25px;
 }
 
 .wallet-button{
@@ -180,7 +180,7 @@ body{
   font-size: 15px;
   color: white;
   box-shadow: 3px 3px 4px rgba(255, 166, 0, 0.342);
-  margin-right: 35px;
+  margin-right: 25px;
 }
 
 .wallet-button:hover{
