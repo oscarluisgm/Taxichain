@@ -16,7 +16,7 @@ function App() {
         <button className="wallet-button"> <i className="bi bi-wallet wallet-icon"></i> Connect Wallet</button>
       </div>
       <div className="layout-taxichain">
-        <div className="sidebar">
+        <div className="sidebar d-none d-md-flex">
           <Link className="sidebar-link" to={"/marketplace"}>
             Marketplace
           </Link>

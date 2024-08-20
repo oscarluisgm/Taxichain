@@ -67,6 +67,7 @@ body{
 .route-class{
   width: 100%;
   background-color: rgb(255, 166, 0);
+  
 }
 
 .logo{
@@ -121,6 +122,7 @@ body{
   width: 100%;
   background: linear-gradient(rgba(255, 153, 0, 0.644),rgba(14, 14, 15, 0.74)), url(../images/city.png);
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .nav-bar{

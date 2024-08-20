@@ -1,7 +1,7 @@
 
 
 
-export const NftModal=({handleModal, currentCar,buy})=>{
+export const NftModal=({handleModal, currentCar, buy})=>{
     return<>
     <div className="bg-modal">
         <div className="body-modal card gap-4">
