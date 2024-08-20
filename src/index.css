@@ -18,15 +18,15 @@ body{
   padding: 10px;
 }
 
-.sidebar-link{
+.sidebar-link {
   text-decoration: none;
   margin: 5px;
+  padding: 0px 10px;
   text-align: center;
   border: 2px solid rgba(0, 0, 0, 0.356);
   color: white;
   border-radius: 4px; 
   height: 35px;
-  overflow: auto;
 }
 
 .sidebar-link:hover{
@@ -34,10 +34,18 @@ body{
   color: white;
 }
 
+.filter-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
 .btn-filter{
-  background: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0.712);
   color: white;
   border: 1px solid transparent;
+  width: 100px;
 }
 
 .btn-filter:hover{
@@ -54,14 +62,6 @@ body{
 .layout-taxichain{
   display: flex;
   background-color: rgb(228, 186, 0);
-}
-
-.filter-buttons{
-  display: flex;
-  background-color: rgb(32, 32, 32);
-  justify-content: end;
-  align-items: center;
-  height: 50px;
 }
 
 .route-class{
@@ -125,11 +125,12 @@ body{
   background-attachment: fixed;
 }
 
-.nav-bar{
+.home, .nav-bar{
   display: flex;
   justify-content: space-between;  
   background-color: rgb(32, 32, 32);
   padding: 10px;
+  overflow: auto;
 }
 
 .wallet-button{
