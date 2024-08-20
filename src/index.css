@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Tint&display=swap');
+
 
 *{
   box-sizing: border-box;
@@ -27,6 +29,9 @@ body{
   color: white;
   border-radius: 4px; 
   height: 35px;
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .sidebar-link:hover{
@@ -125,12 +130,38 @@ body{
   background-attachment: fixed;
 }
 
-.home, .nav-bar{
+.home{
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between; 
+  align-items: center; 
   background-color: rgb(32, 32, 32);
   padding: 10px;
   overflow: auto;
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 166, 0);
+  height: 120px;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: rgb(32, 32, 32);
+  padding: 10px;
+  overflow: auto;
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  margin-left: 35px;
 }
 
 .wallet-button{
@@ -147,6 +178,15 @@ body{
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
+  color: white;
+  box-shadow: 3px 3px 4px rgba(255, 166, 0, 0.342);
+  margin-right: 35px;
+}
+
+.wallet-button:hover{
+  box-shadow: inset 3px 3px 4px rgb(255, 223, 163),2px 2px 3px rgba(253, 222, 165, 0.342);
+  background-color: rgb(252, 188, 69);
+  color: black;
 }
 
 .wallet-icon{

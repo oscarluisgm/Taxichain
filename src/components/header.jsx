@@ -5,7 +5,10 @@ export const Header = ({ pictures }) => {
     <>
       <div className="header">
         <div className="home">
-          <img src={pictures?.logo} height="80px" />
+          <div className="header-brand">
+            <img src={pictures?.logo} height="80px" />
+            <h1 className="taxichain-title d-none d-sm-flex">TaxiChain</h1>
+          </div>
           <button className="wallet-button">
             <i className="bi bi-wallet wallet-icon"></i> Connect Wallet
           </button>
