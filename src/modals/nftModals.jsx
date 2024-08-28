@@ -9,7 +9,7 @@ export const NftModal=({handleModal, currentCar, buy})=>{
           <button onClick={()=>handleModal(false,{})}><i className="bi bi-x-square-fill close-button"></i></button>
           </div>
           <div className="img-modal">
-            <img src={currentCar?.img} className="img-modal" />
+            <img src={currentCar?.img} className="img-modal-in" />
           </div>   
           <div className="info-modal gap-3">
             <div>This NFT provides an estimated ROI of {currentCar?.roi} months.</div>
