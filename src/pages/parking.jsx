@@ -1,15 +1,15 @@
-import useMarketplace from "../hooks/useMarketplace";
+import useParking from "../hooks/useParking";
 import { ParkingModal } from "../modals/parkingModal";
 
 
 export default function Parking() {
   
-    const{visible, buy, currentCar, handleFilter, handleModal, cars}=useMarketplace()
+    const{visible, sold, currentCar, handleFilter, handleModal, cars}=useParking()
     
     return (
       <>
         
-        {visible && <ParkingModal handleModal={handleModal} buy={buy} currentCar={currentCar}/>}
+        {visible && <ParkingModal handleModal={handleModal} sold={sold} currentCar={currentCar}/>}
   
   
   

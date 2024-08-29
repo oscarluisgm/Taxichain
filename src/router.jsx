@@ -9,7 +9,6 @@ export default function Router() {
       <Routes>
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/parking" element={<Parking />} />
-
       </Routes>
     </div>
   );

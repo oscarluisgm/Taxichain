@@ -1,4 +1,4 @@
-export const ParkingModal=({handleModal, currentCar, buy})=>{
+export const ParkingModal=({handleModal, currentCar, sold})=>{
     return<>
     <div className="parking-bg-modal">
         <div className="parking-body-modal card gap-4">
@@ -12,9 +12,9 @@ export const ParkingModal=({handleModal, currentCar, buy})=>{
             <div>This NFT provides an estimated ROI of {currentCar?.roi} months.</div>
             <div>Price: {currentCar?.price} BNB</div>
           </div>
-          <button className="parking-card-button sell-button bg-danger " onClick={buy}>Sell ({currentCar?.price} BNB)</button>
-          <button className="parking-card-button rent-button bg-warning" onClick={buy}>Rent ({currentCar?.rent} BNB)</button>
-          <button className="parking-card-button drive-button bg-secondary" onClick={buy}>Drive </button>
+          <button className="parking-card-button sell-button bg-danger " onClick={sold}>Sell ({currentCar?.price} BNB)</button>
+          <button className="parking-card-button rent-button bg-warning" onClick={sold}>Rent ({currentCar?.rent} BNB)</button>
+          <button className="parking-card-button drive-button bg-secondary" onClick={sold}>Drive </button>
         </div>
       </div>    
     </>
