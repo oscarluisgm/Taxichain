@@ -9,6 +9,7 @@ const useParking=()=>{
   const[cars, setCars]=useState([])
   const[visible, setVisible]=useState(false)
   const[currentCar, setCurrentCar]=useState({})
+  const[parkModalButtons, setparkModalButtons]=useState("")
   const{noti}=useParkingTostify()
 
   useEffect(()=>{
@@ -33,13 +34,27 @@ const useParking=()=>{
     setCurrentCar(nft);
   }
 
-  const sold=()=>{
+
+  //con esta función va a desaparecer el modal y va a mostrar el toast correspondiente
+  const handleParking=(option)=>{
     handleModal(false, {})
-    noti(`Sold successfully`);
+    
+    if (option==="sell"){
+      setparkModalButtons("sell")
+      noti("This car has been sold!");
+    }
+    if (option==="rent"){
+      setparkModalButtons("rent")
+      noti("This car has been rented");
+    }
+    if (option==="drive"){
+      setparkModalButtons("drive")
+      noti("Enjoy your driving");
+    }
   }
 
 
-    return {visible,sold,currentCar,handleFilter,handleModal,cars}
+    return {visible, currentCar,handleFilter,handleModal,cars, handleParking, parkModalButtons}
     
 }
 export default useParking

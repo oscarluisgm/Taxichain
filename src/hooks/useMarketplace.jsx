@@ -11,7 +11,6 @@ const useMarketplace=()=>{
   const{notify}=useTostify()
 
   useEffect(()=>{
-    
     const rarity=localStorage.getItem('rarity')
     
     if (rarity){
@@ -34,7 +33,7 @@ const useMarketplace=()=>{
 
   const buy=()=>{
     handleModal(false, {})
-    notify(`Bought successfully`);
+    notify("Bought successfully");
   }
 
 

@@ -4,12 +4,12 @@ import { ParkingModal } from "../modals/parkingModal";
 
 export default function Parking() {
   
-    const{visible, sold, currentCar, handleFilter, handleModal, cars}=useParking()
+    const{visible, currentCar, handleFilter, handleModal, cars, handleParking, parkModalButtons}=useParking()
     
     return (
       <>
         
-        {visible && <ParkingModal handleModal={handleModal} sold={sold} currentCar={currentCar}/>}
+        {visible && <ParkingModal handleModal={handleModal} handleParking={handleParking} currentCar={currentCar} parkModalButtons={parkModalButtons}/>}
   
   
   

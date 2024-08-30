@@ -3,7 +3,8 @@ import { ToastContainer } from "react-toastify";
 
 const useParkingTostify=()=>{
     const noti=(text)=>{
-        toast.success(text || "");
+        toast.info(text || "", {theme: "light"});
+        
     }
 
     return {
@@ -11,4 +12,6 @@ const useParkingTostify=()=>{
         noti
     }
 }
+
+
 export default useParkingTostify
