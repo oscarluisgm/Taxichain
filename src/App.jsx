@@ -15,7 +15,7 @@ function App() {
       <Header pictures={pictures} />
       <div className="layout-taxichain">
         <Sidebar />
-        <Router />
+        <Router />       
       </div>
     </>
   );

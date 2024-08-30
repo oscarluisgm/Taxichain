@@ -9,6 +9,7 @@
 body{
   margin: 0px;
   padding: 0px;
+  background-color:  rgb(255, 166, 0);
 }
 
 .sidebar{
@@ -66,12 +67,10 @@ body{
 
 .layout-taxichain{
   display: flex;
-  background-color:rgb(255, 166, 0);
 }
 
 .route-class{
   width: 100%;
-  background-color: rgb(255, 166, 0);
 }
 
 .logo{
