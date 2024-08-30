@@ -10,7 +10,7 @@ const useParking=()=>{
   const[visible, setVisible]=useState(false)
   const[currentCar, setCurrentCar]=useState({})
   const[parkModalButtons, setparkModalButtons]=useState("")
-  const{noti}=useParkingTostify()
+  const{noti, noti2, noti3}=useParkingTostify()
 
   useEffect(()=>{
     
@@ -45,11 +45,11 @@ const useParking=()=>{
     }
     if (option==="rent"){
       setparkModalButtons("rent")
-      noti("This car has been rented");
+      noti2("This car has been rented");
     }
     if (option==="drive"){
       setparkModalButtons("drive")
-      noti("Enjoy your driving");
+      noti3("Enjoy your driving");
     }
   }
 

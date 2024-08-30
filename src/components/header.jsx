@@ -5,7 +5,7 @@ export const Header = ({ pictures }) => {
     <>
       <div className="header">
         <div className="home">
-          <div className="header-brand">
+          <div className="header-brand" >
             <img src={pictures?.logo} height="80px" />
             <h1 className="taxichain-title d-none d-sm-flex">TaxiChain</h1>
           </div>
