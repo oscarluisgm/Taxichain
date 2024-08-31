@@ -1,7 +1,7 @@
 
 
 
-export const NftModal=({handleModal, currentCar, buy})=>{
+export const NftModal=({handleModal, currentCar, handleSecondaryModal})=>{
     return<>
     <div className="bg-modal">
         <div className="body-modal card gap-4">
@@ -15,7 +15,7 @@ export const NftModal=({handleModal, currentCar, buy})=>{
             <div>This NFT provides an estimated ROI of {currentCar?.roi} months.</div>
             <div>Price: {currentCar?.price} BNB</div>
           </div>
-          <button className="card-button buy-button" onClick={buy}>Buy ({currentCar?.price} BNB)</button>
+          <button className="card-button buy-button" onClick={()=>handleSecondaryModal(true)}>Buy ({currentCar?.price} BNB)</button>
         </div>
       </div>    
     </>

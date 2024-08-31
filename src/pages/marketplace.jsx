@@ -1,16 +1,18 @@
 
 import useMarketplace from "../hooks/useMarketplace";
 import { NftModal } from "../modals/nftModals";
+import {SecondaryModalMarketplace} from "../modals/marketplaceSecondaryModal";
 
 
 export default function Marketplace() {
   
-  const{visible,buy,currentCar,handleFilter,handleModal,cars}=useMarketplace()
+  const{visible,confirm,currentCar, handleFilter, handleModal,cars, secModal, handleSecondaryModal}=useMarketplace()
   
   return (
     <>
       
-      {visible && <NftModal handleModal={handleModal} buy={buy} currentCar={currentCar}/>}
+      {visible && <NftModal handleModal={handleModal} confirm={confirm} currentCar={currentCar} handleSecondaryModal={handleSecondaryModal}/>}
+      {secModal && <SecondaryModalMarketplace  confirm={confirm} handleSecondaryModal={handleSecondaryModal}/>}
 
 
 
