@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
-export const Header = ({ pictures, borderStyle, bStyle, setBorderStyle }) => {
+export const Header = ({pictures, borderStyle, bStyle, styleHandler}) => {
   
 
   return (
@@ -17,14 +16,14 @@ export const Header = ({ pictures, borderStyle, bStyle, setBorderStyle }) => {
           </button>
         </div>
         <div className="nav-bar d-flex d-md-none">
-        <Link className="sidebar-link" to={"/marketplace"} onClick={()=>setBorderStyle("marketplace")} style={borderStyle==="marketplace" ? bStyle.clicked:bStyle.normal}>
+        <Link className="sidebar-link" to={"/marketplace"} onClick={()=>styleHandler("marketplace")} style={borderStyle==="marketplace" ? bStyle.clicked:bStyle.normal}>
           Marketplace
         </Link>
-        <Link className="sidebar-link" /* onClick={()=>setBorderStyle("city")} style={borderStyle==="city" ? bStyle.clicked:bStyle.normal} */>City</Link>
-        <Link className="sidebar-link" /* onClick={()=>setBorderStyle("mining")} style={borderStyle==="mining" ? bStyle.clicked:bStyle.normal} */>Mining</Link>
-        <Link className="sidebar-link" to={"/parking"} onClick={()=>setBorderStyle("parking")} style={borderStyle==="parking" ? bStyle.clicked:bStyle.normal}>Parking</Link>
-        <Link className="sidebar-link" /* onClick={()=>setBorderStyle("profile")} style={borderStyle==="profile" ? bStyle.clicked:bStyle.normal} */>Profile</Link>
-        <Link className="sidebar-link" /* onClick={()=>setBorderStyle("crafting")} style={borderStyle==="crafting" ? bStyle.clicked:bStyle.normal} */>Crafting</Link>
+        <Link className="sidebar-link" /* onClick={()=>styleHandler("city")} style={borderStyle==="city" ? bStyle.clicked:bStyle.normal} */>City</Link>
+        <Link className="sidebar-link" /* onClick={()=>styleHandler("mining")} style={borderStyle==="mining" ? bStyle.clicked:bStyle.normal} */>Mining</Link>
+        <Link className="sidebar-link" to={"/parking"} onClick={()=>styleHandler("parking")} style={borderStyle==="parking" ? bStyle.clicked:bStyle.normal}>Parking</Link>
+        <Link className="sidebar-link" /* onClick={()=>styleHandler("profile")} style={borderStyle==="profile" ? bStyle.clicked:bStyle.normal} */>Profile</Link>
+        <Link className="sidebar-link" /* onClick={()=>styleHandler("crafting")} style={borderStyle==="crafting" ? bStyle.clicked:bStyle.normal} */>Crafting</Link>
         </div>
       </div>
     </>
