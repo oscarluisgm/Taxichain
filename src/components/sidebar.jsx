@@ -1,17 +1,8 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
-export const Sidebar = () => {
+export const Sidebar = ({borderStyle, bStyle, setBorderStyle}) => {
 
-  const[borderStyle, setBorderStyle]=useState("")
-
-  const bStyle={
-    normal:{},
-    clicked:{border:'3px solid white', backgroundColor:'rgb(255, 166, 0)'}
-  }
   
-
-
   return (
     <>
       <div className="sidebar d-none d-md-flex">
