@@ -13,6 +13,7 @@ function App() {
 
   useEffect(()=>{
     const styleGetter=localStorage.getItem("style")
+    
     if (styleGetter){
       setBorderStyle(styleGetter)
     }
@@ -26,7 +27,7 @@ function App() {
 
   const styleHandler=(bs)=>{
     setBorderStyle(bs)
-    localStorage.setItem("style", borderStyle)
+    localStorage.setItem("style", bs)
   }
 
 
