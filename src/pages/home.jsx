@@ -2,9 +2,9 @@
 
 export default function Home () {
     return<>
-    <div className="container home-container">
+    <div className="container-fluid home-container">
         <div className="row">
-            <div className="col-12">
+            <div className="col">
                 <div className="card home-cards">
                     <h1>TAXICHAIN SOON...</h1>
                     <hr style={{backgroundColor:"white"}}/>
@@ -13,7 +13,7 @@ export default function Home () {
             </div>
         </div> 
         <div className="row">
-            <div className="col-12">
+            <div className="col">
                 <div className="card home-cards">
                     <h1>SOMETHING ELSE IS COMING</h1>
                     <hr style={{color:"red"}}/>
