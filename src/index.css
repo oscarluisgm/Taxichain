@@ -327,6 +327,20 @@ body{
   max-width: 300px;
 }
 
+.home-container{
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.home-cards{
+  border: 5px solid black;
+  background: linear-gradient(to bottom, black, rgb(245, 173, 39));
+  color: white;
+}
 
 @media (max-width:305px){
   .parking-card-button, .card-button{

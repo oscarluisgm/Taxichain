@@ -16,6 +16,7 @@ export const Header = ({pictures, borderStyle, bStyle, styleHandler}) => {
           </button>
         </div>
         <div className="nav-bar d-flex d-md-none">
+        <Link className="sidebar-link" to={"/home"} onClick={()=>styleHandler("home")} style={borderStyle==="home" ? bStyle.clicked:bStyle.normal}>Home</Link>  
         <Link className="sidebar-link" to={"/marketplace"} onClick={()=>styleHandler("marketplace")} style={borderStyle==="marketplace" ? bStyle.clicked:bStyle.normal}>
           Marketplace
         </Link>

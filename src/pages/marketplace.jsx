@@ -4,7 +4,7 @@ import { NftModal } from "../modals/nftModals";
 import {SecondaryModalMarketplace} from "../modals/marketplaceSecondaryModal";
 
 
-export default function Marketplace() {
+export default function Marketplace(){
   
   const{visible,confirm,currentCar, handleFilter, handleModal,cars, secModal, handleSecondaryModal}=useMarketplace()
   

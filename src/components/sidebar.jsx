@@ -6,6 +6,7 @@ export const Sidebar = ({borderStyle, bStyle, styleHandler}) => {
   return (
     <>
       <div className="sidebar d-none d-md-flex">
+        <Link className="sidebar-link" to={"/home"} onClick={()=>styleHandler("home")} style={borderStyle==="home" ? bStyle.clicked:bStyle.normal}>Home</Link>
         <Link className="sidebar-link" to={"/marketplace"} onClick={()=>styleHandler("marketplace")} style={borderStyle==="marketplace" ? bStyle.clicked:bStyle.normal}>
           Marketplace
         </Link>
