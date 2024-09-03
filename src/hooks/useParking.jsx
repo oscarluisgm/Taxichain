@@ -8,8 +8,9 @@ const useParking=()=>{
    
   const[cars, setCars]=useState([])
   const[visible, setVisible]=useState(false)
+  const[secondaryVisible,setSecondaryVisible]=useState(false)
   const[currentCar, setCurrentCar]=useState({})
-  const[parkModalButtons, setparkModalButtons]=useState("")
+  const[buttonAction, setButtonAction]=useState("")
   const{noti, noti2, noti3}=useParkingTostify()
 
   useEffect(()=>{
@@ -34,27 +35,32 @@ const useParking=()=>{
     setCurrentCar(nft);
   }
 
+  const secondaryModalParking=(ok, actionButton)=>{
+    setSecondaryVisible(ok)
+    setButtonAction(actionButton)
+  }
 
-  //con esta función va a desaparecer el modal y va a mostrar el toast correspondiente
-  const handleParking=(option)=>{
+  const handleParking=()=>{
     handleModal(false, {})
+    secondaryModalParking(false, "")
     
-    if (option==="sell"){
-      setparkModalButtons("sell")
+    if (buttonAction==="sell"){
       noti("This car has been sold!");
     }
-    if (option==="rent"){
-      setparkModalButtons("rent")
+    if (buttonAction==="rent"){
       noti2("This car has been rented");
     }
-    if (option==="drive"){
-      setparkModalButtons("drive")
+    if (buttonAction==="drive"){
       noti3("Enjoy your driving");
     }
   }
 
+  const handleCancel=()=>{
+    setSecondaryVisible(false)
+  }
 
-    return {visible, currentCar,handleFilter,handleModal,cars, handleParking, parkModalButtons}
+
+    return {visible, currentCar,handleFilter,handleModal,cars, handleParking, secondaryVisible, secondaryModalParking,handleCancel}
     
 }
 export default useParking

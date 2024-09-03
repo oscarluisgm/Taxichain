@@ -1,16 +1,16 @@
 import useParking from "../hooks/useParking";
 import { ParkingModal } from "../modals/parkingModal";
-
+import { SecondaryParking } from "../modals/parkingSecondaryModal";
 
 export default function Parking() {
   
-    const{visible, currentCar, handleFilter, handleModal, cars, handleParking, parkModalButtons}=useParking()
+    const{visible, currentCar, handleFilter, handleModal, cars, handleParking, buttonAction, secondaryVisible, handleCancel,secondaryModalParking}=useParking()
     
     return (
       <>
         
-        {visible && <ParkingModal handleModal={handleModal} handleParking={handleParking} currentCar={currentCar} parkModalButtons={parkModalButtons}/>}
-  
+        {visible && <ParkingModal handleModal={handleModal} handleParking={handleParking} currentCar={currentCar} secondaryModalParking={secondaryModalParking}/>}
+        {secondaryVisible && <SecondaryParking buttonAction={buttonAction} handleParking={handleParking} handleCancel={handleCancel}/>}
   
   
         <div className="container-fluid bg-container">
