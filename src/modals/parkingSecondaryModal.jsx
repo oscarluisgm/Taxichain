@@ -1,5 +1,5 @@
 
-export const SecondaryModalPark=({buttonAction, handleParking, handleCancel})=>{
+export const SecondaryParking=({buttonAction, handleParking, handleCancel})=>{
 
     return <>
         <div className="secondary-modal-bg">
